@@ -11,28 +11,31 @@
 //路线
 @interface Line : NSObject
 
-//终点站名称
-@property NSString * terminal_name;
-//起点站拼音名
-@property NSString * front_spell;
-//线路编号
-@property NSString * line_id;
+//公司名
+@property NSString * company;
+//起点站名字
+@property NSString * front_name;
+//线路名字
+@property NSString * name;
 //线路名称
 @property NSString * key_name;
-//用文字来描述无特定发车规则
-@property NSString * time_desc;
-//首发站名称
-@property NSString * front_name;
+//早班车时间
+@property NSString * start_time;
+//晚班车时间
+@property NSString * end_time;
+//线路总长度
+@property NSString * length;
 //站台列表
 @property NSMutableArray * stations;
 
 //重写构造方法
--(instancetype)initWithTerminalName:(NSString*)tn
-                      andFrontSpell:(NSString*)fs
-                          andLineId:(NSString*)li
+-(instancetype)initWithCompany:(NSString*)tn
+                      andFrontName:(NSString*)fn
+                       andName:(NSString*)na
                          andKeyName:(NSString*)kn
-                        andTimeDesc:(NSString*)td
-                       andFrontName:(NSString*)fn;
+                        andStartTime:(NSString*)st
+                       andEndTime:(NSString*)et
+                     andLength:(NSString*)len;
 //添加站点
 -(void)addStation:(Station *)newStation;
 

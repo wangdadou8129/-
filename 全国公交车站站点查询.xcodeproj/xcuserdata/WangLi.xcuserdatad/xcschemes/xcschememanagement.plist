@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>TextBundle.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>全国公交车站站点查询.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,21 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>811A38331C1EEBB6008A5931</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>811A384B1C1EEBB6008A5931</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>811A38561C1EEBB6008A5931</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>814BC29D1C1AB331009070CF</key>
 		<dict>
 			<key>primary</key>

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		811A38221C1EBD87008A5931 /* LineManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A38211C1EBD87008A5931 /* LineManager.m */; settings = {ASSET_TAGS = (); }; };
+		811A38251C1EBDD4008A5931 /* SyncLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A38241C1EBDD4008A5931 /* SyncLine.m */; settings = {ASSET_TAGS = (); }; };
+		811A386E1C1F0084008A5931 /* InitCityCodePlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A386D1C1F0084008A5931 /* InitCityCodePlist.m */; settings = {ASSET_TAGS = (); }; };
+		811A38721C1F03E8008A5931 /* CityCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A38711C1F03E8008A5931 /* CityCode.m */; settings = {ASSET_TAGS = (); }; };
 		814BC2A21C1AB331009070CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 814BC2A11C1AB331009070CF /* main.m */; };
 		814BC2AA1C1AB364009070CF /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 814BC2A91C1AB364009070CF /* Station.m */; settings = {ASSET_TAGS = (); }; };
 		814BC2AD1C1AB81B009070CF /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = 814BC2AC1C1AB81B009070CF /* Line.m */; settings = {ASSET_TAGS = (); }; };
@@ -15,16 +19,27 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		814BC29C1C1AB331009070CF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			buildActionMask = 12;
+			dstPath = "";
 			dstSubfolderSpec = 0;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		811A38201C1EBD87008A5931 /* LineManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineManager.h; sourceTree = "<group>"; };
+		811A38211C1EBD87008A5931 /* LineManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineManager.m; sourceTree = "<group>"; };
+		811A38231C1EBDD4008A5931 /* SyncLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncLine.h; sourceTree = "<group>"; };
+		811A38241C1EBDD4008A5931 /* SyncLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncLine.m; sourceTree = "<group>"; };
+		811A38281C1EE5FA008A5931 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		811A386A1C1EFC5D008A5931 /* cityCode.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityCode.plist; sourceTree = "<group>"; };
+		811A386C1C1F0084008A5931 /* InitCityCodePlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitCityCodePlist.h; sourceTree = "<group>"; };
+		811A386D1C1F0084008A5931 /* InitCityCodePlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitCityCodePlist.m; sourceTree = "<group>"; };
+		811A38701C1F03E8008A5931 /* CityCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityCode.h; sourceTree = "<group>"; };
+		811A38711C1F03E8008A5931 /* CityCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityCode.m; sourceTree = "<group>"; };
+		811A38731C1F0753008A5931 /* cityCode.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cityCode.txt; sourceTree = "<group>"; };
 		814BC29E1C1AB331009070CF /* 全国公交车站站点查询 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "全国公交车站站点查询"; sourceTree = BUILT_PRODUCTS_DIR; };
 		814BC2A11C1AB331009070CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		814BC2A81C1AB364009070CF /* Station.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Station.h; sourceTree = "<group>"; };
@@ -44,6 +59,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		811A382D1C1EEA86008A5931 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				811A38281C1EE5FA008A5931 /* config.plist */,
+				811A386A1C1EFC5D008A5931 /* cityCode.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		811A386B1C1F005E008A5931 /* CityCode */ = {
+			isa = PBXGroup;
+			children = (
+				811A38731C1F0753008A5931 /* cityCode.txt */,
+				811A386C1C1F0084008A5931 /* InitCityCodePlist.h */,
+				811A386D1C1F0084008A5931 /* InitCityCodePlist.m */,
+				811A38701C1F03E8008A5931 /* CityCode.h */,
+				811A38711C1F03E8008A5931 /* CityCode.m */,
+			);
+			name = CityCode;
+			sourceTree = "<group>";
+		};
 		814BC2951C1AB331009070CF = {
 			isa = PBXGroup;
 			children = (
@@ -63,11 +99,17 @@
 		814BC2A01C1AB331009070CF /* 全国公交车站站点查询 */ = {
 			isa = PBXGroup;
 			children = (
+				811A386B1C1F005E008A5931 /* CityCode */,
+				811A382D1C1EEA86008A5931 /* Resources */,
 				814BC2A11C1AB331009070CF /* main.m */,
 				814BC2A81C1AB364009070CF /* Station.h */,
 				814BC2A91C1AB364009070CF /* Station.m */,
 				814BC2AB1C1AB81B009070CF /* Line.h */,
 				814BC2AC1C1AB81B009070CF /* Line.m */,
+				811A38201C1EBD87008A5931 /* LineManager.h */,
+				811A38211C1EBD87008A5931 /* LineManager.m */,
+				811A38231C1EBDD4008A5931 /* SyncLine.h */,
+				811A38241C1EBDD4008A5931 /* SyncLine.m */,
 			);
 			path = "全国公交车站站点查询";
 			sourceTree = "<group>";
@@ -112,6 +154,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 814BC2951C1AB331009070CF;
 			productRefGroup = 814BC29F1C1AB331009070CF /* Products */;
@@ -128,9 +171,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811A386E1C1F0084008A5931 /* InitCityCodePlist.m in Sources */,
+				811A38251C1EBDD4008A5931 /* SyncLine.m in Sources */,
 				814BC2AA1C1AB364009070CF /* Station.m in Sources */,
 				814BC2AD1C1AB81B009070CF /* Line.m in Sources */,
 				814BC2A21C1AB331009070CF /* main.m in Sources */,
+				811A38721C1F03E8008A5931 /* CityCode.m in Sources */,
+				811A38221C1EBD87008A5931 /* LineManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
