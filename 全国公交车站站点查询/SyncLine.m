@@ -23,7 +23,7 @@
 
 -(instancetype)initWithCity:(NSString*)city andLineNum:(NSString *)line{
     if (self = [super init]) {
-        _city = city;
+        _city = [CityCodeManager cityCode:city];
         _line = line;
         _data = [[NSData alloc]init];
     }
@@ -84,6 +84,7 @@
     }
     
     NSLog(@"%@",line);
+    
 }
 
 //设定连接的路径

@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "Line.h"
+#import "CityCodeManager.h"
+
 /* 同步线路 */
 @interface SyncLine : NSObject
 

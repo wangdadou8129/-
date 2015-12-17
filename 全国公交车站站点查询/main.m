@@ -8,11 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "SyncLine.h"
-#import "InitCityCodePlist.h"
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        //SyncLine * sl = [[SyncLine alloc]initWithCity:@"0411" andLineNum:@"1"];
-        InitCityCodePlist * ic = [[InitCityCodePlist alloc]init];
+        SyncLine * sl = [[SyncLine alloc]initWithCity:@"大连市" andLineNum:@"708"];
     }
     return 0;
 }
