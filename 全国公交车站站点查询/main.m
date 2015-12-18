@@ -7,11 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SyncLine.h"
+#import "AnalysisLine.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        SyncLine * sl = [[SyncLine alloc]initWithCity:@"大连市" andLineNum:@"708"];
+        char city[100];
+        char line[100];
+        NSLog(@"欢迎使用全国公交车站站点查询系统");
+        NSLog(@"请输入要查询的城市:(如:大连市)");
+        scanf("%s",city);
+        NSLog(@"请输入要查询的路线:(如:708)");
+        scanf("%s",line);
+        AnalysisLine * al = [[AnalysisLine alloc]initWithCity:[NSString stringWithUTF8String:city] andLineNum:[NSString stringWithUTF8String:line]];
     }
     return 0;
 }
+
+
+
+
+
+

@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		811A38221C1EBD87008A5931 /* LineManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A38211C1EBD87008A5931 /* LineManager.m */; settings = {ASSET_TAGS = (); }; };
 		811A38251C1EBDD4008A5931 /* SyncLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A38241C1EBDD4008A5931 /* SyncLine.m */; settings = {ASSET_TAGS = (); }; };
 		811A386E1C1F0084008A5931 /* InitCityCodePlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A386D1C1F0084008A5931 /* InitCityCodePlist.m */; settings = {ASSET_TAGS = (); }; };
 		811A38721C1F03E8008A5931 /* CityCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A38711C1F03E8008A5931 /* CityCode.m */; settings = {ASSET_TAGS = (); }; };
 		811A38781C227BEC008A5931 /* CityCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A38771C227BEC008A5931 /* CityCodeManager.m */; settings = {ASSET_TAGS = (); }; };
+		811A387B1C22B4A3008A5931 /* AnalysisLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A387A1C22B4A3008A5931 /* AnalysisLine.m */; settings = {ASSET_TAGS = (); }; };
+		811A387E1C22B604008A5931 /* LocaleLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A387D1C22B604008A5931 /* LocaleLine.m */; settings = {ASSET_TAGS = (); }; };
 		814BC2A21C1AB331009070CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 814BC2A11C1AB331009070CF /* main.m */; };
 		814BC2AA1C1AB364009070CF /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 814BC2A91C1AB364009070CF /* Station.m */; settings = {ASSET_TAGS = (); }; };
 		814BC2AD1C1AB81B009070CF /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = 814BC2AC1C1AB81B009070CF /* Line.m */; settings = {ASSET_TAGS = (); }; };
@@ -30,8 +31,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		811A38201C1EBD87008A5931 /* LineManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineManager.h; sourceTree = "<group>"; };
-		811A38211C1EBD87008A5931 /* LineManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineManager.m; sourceTree = "<group>"; };
 		811A38231C1EBDD4008A5931 /* SyncLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncLine.h; sourceTree = "<group>"; };
 		811A38241C1EBDD4008A5931 /* SyncLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncLine.m; sourceTree = "<group>"; };
 		811A38281C1EE5FA008A5931 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
@@ -43,6 +42,10 @@
 		811A38731C1F0753008A5931 /* cityCode.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cityCode.txt; sourceTree = "<group>"; };
 		811A38761C227BEC008A5931 /* CityCodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityCodeManager.h; sourceTree = "<group>"; };
 		811A38771C227BEC008A5931 /* CityCodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityCodeManager.m; sourceTree = "<group>"; };
+		811A38791C22B4A3008A5931 /* AnalysisLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalysisLine.h; sourceTree = "<group>"; };
+		811A387A1C22B4A3008A5931 /* AnalysisLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalysisLine.m; sourceTree = "<group>"; };
+		811A387C1C22B604008A5931 /* LocaleLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocaleLine.h; sourceTree = "<group>"; };
+		811A387D1C22B604008A5931 /* LocaleLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocaleLine.m; sourceTree = "<group>"; };
 		814BC29E1C1AB331009070CF /* 全国公交车站站点查询 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "全国公交车站站点查询"; sourceTree = BUILT_PRODUCTS_DIR; };
 		814BC2A11C1AB331009070CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		814BC2A81C1AB364009070CF /* Station.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Station.h; sourceTree = "<group>"; };
@@ -90,10 +93,12 @@
 			children = (
 				814BC2AB1C1AB81B009070CF /* Line.h */,
 				814BC2AC1C1AB81B009070CF /* Line.m */,
-				811A38201C1EBD87008A5931 /* LineManager.h */,
-				811A38211C1EBD87008A5931 /* LineManager.m */,
 				811A38231C1EBDD4008A5931 /* SyncLine.h */,
 				811A38241C1EBDD4008A5931 /* SyncLine.m */,
+				811A38791C22B4A3008A5931 /* AnalysisLine.h */,
+				811A387A1C22B4A3008A5931 /* AnalysisLine.m */,
+				811A387C1C22B604008A5931 /* LocaleLine.h */,
+				811A387D1C22B604008A5931 /* LocaleLine.m */,
 			);
 			name = Line;
 			sourceTree = "<group>";
@@ -193,13 +198,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				811A386E1C1F0084008A5931 /* InitCityCodePlist.m in Sources */,
+				811A387E1C22B604008A5931 /* LocaleLine.m in Sources */,
 				811A38251C1EBDD4008A5931 /* SyncLine.m in Sources */,
+				811A387B1C22B4A3008A5931 /* AnalysisLine.m in Sources */,
 				814BC2AA1C1AB364009070CF /* Station.m in Sources */,
 				811A38781C227BEC008A5931 /* CityCodeManager.m in Sources */,
 				814BC2AD1C1AB81B009070CF /* Line.m in Sources */,
 				814BC2A21C1AB331009070CF /* main.m in Sources */,
 				811A38721C1F03E8008A5931 /* CityCode.m in Sources */,
-				811A38221C1EBD87008A5931 /* LineManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
